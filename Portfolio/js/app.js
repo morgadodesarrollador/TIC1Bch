@@ -13,6 +13,15 @@ function iniciar() {
     var xQSomos = $("header nav a#qSomos");
     xforma.click(cargarForma);
     xQSomos.click(cargarQSomos);
+    var xhome = $("header figure#logo");
+    xhome.click(cargarHome);
+
+    cargarHome();
+}
+
+function cargarHome(){
+    $("main").load("html/home.html");
+    
 }
 
 function cargarForma(){
